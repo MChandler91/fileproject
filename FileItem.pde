@@ -68,7 +68,6 @@ class FileItem extends SimpleMapItem {
     calcBox();
 
     if (name.indexOf(".jpg") >= 0 || name.indexOf(".jpeg") >= 0 || name.indexOf(".png") >= 0 || name.indexOf(".JPG") >= 0 || name.indexOf(".JPEG") >= 0 || name.indexOf(".PNG") >= 0) {
-      image.resize((int)(boxRight - boxLeft), (int)(boxBottom - boxTop));
       image(image, boxLeft, boxTop);
     } else {  
 
